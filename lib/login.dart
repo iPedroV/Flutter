@@ -9,10 +9,6 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-
-
-
-
           //Logo(),
           //Email(),
           //Senha(),
@@ -49,7 +45,9 @@ class LoginScreen extends StatelessWidget {
               ),
               textStyle: TextStyle(fontSize: 14),
             ),
-            onPressed: (){},
+            onPressed: (){
+              Navigator.pushReplacementNamed(context, '/lista');
+            },
           )
         ],
       ),

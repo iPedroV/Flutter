@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meuapp/cadastro.dart';
+import 'package:meuapp/lista.dart';
 import 'package:meuapp/login.dart';
 
 void main() {
@@ -69,7 +71,12 @@ class MeuApp3 extends StatelessWidget {
     return MaterialApp(
       title: "Meu Aplicativo",
       theme: ThemeData(primarySwatch: Colors.indigo),
-      home: LoginScreen(),
+
+      routes: {
+        '/': (context) => LoginScreen(),
+        '/lista': (context) => ListaScreen(),
+        '/cadastro': (context) => NovoScreen(),
+    },
     );
   }
 }
